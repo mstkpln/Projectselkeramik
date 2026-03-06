@@ -1,0 +1,79 @@
+<!-- shop.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop – Selkeramik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html"><div class="logo">SELKERAMIK</div></a>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="header-divider"></div>
+
+<section class="intro-text fade-in">
+    <!-- <p>
+        A curated selection of handmade ceramic pieces.  
+        Each item is crafted slowly, embracing texture, form, and imperfection.
+    </p>-->
+</section>
+<p style="text-align:center; margin-top:20px; min-height: 45vh;">
+    Online shop opening soon — items currently unavailable.
+</p>
+
+<!-- <section class="cards fade-in" id="product-list"></section> -->
+
+    <footer>
+            <p>© <script>
+    document.write(new Date().getFullYear());
+</script> Selkeramik Ceramic Studio. All rights reserved.</p>
+        <br>
+        <div class="social-links">
+        <!-- Facebook URL -->
+        <a href="https://www.facebook.com/selen.kaplan.1804/" target="_blank" aria-label="Facebook">
+            <img src="/images/facebook-icon.png" alt="Facebook">
+        </a>
+        <!-- Instagram URL -->
+        <a href="https://www.instagram.com/selkeramik/" target="_blank" aria-label="Instagram">
+            <img src="/images/instagram-icon.png" alt="Instagram">
+        </a>
+    </div>
+    </footer>
+
+<!-- CART ICON -->
+<div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<!-- CART MODAL -->
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+
+        <span class="close-cart" onclick="toggleCart()">×</span>
+        <h2>Your Cart</h2>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-total">
+            Total: $<span id="cart-total">0</span>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://js.stripe.com/v3/"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ceramic Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html"><div class="logo">SELKERAMIK</div></a>
+        <nav>
+            <a href="gallery.html">Gallery</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+<div class="header-divider"></div>
+		<section class="hero-images">
+    		<img src="/images/Screenshot 2026-03-01 205446.jpg">
+    		<img src="/images/Screenshot 2026-03-01 205624.jpg">
+			</section>
+
+    <section class="intro-text">
+    <h2>About Selkeramik</h2>
+    <p>
+        Selkeramik is a miniature ceramic brand focused on handcrafted forms, 
+        earthy textures, and timeless design. Each piece is made slowly—small 
+        but meaningful—embracing imperfection through delicate forms and 
+        material honesty.
+    </p>
+		</section>
+		
+    <section class="process fade-in">
+    <h2>Process</h2>
+    <p>
+        Every piece is wheel-thrown, trimmed, fired, and glazed by hand.
+        The process values patience, repetition, and material exploration.
+    </p>
+
+    <!-- YouTube Video Embed -->
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/SGnwoE47P2w" 
+            title="Ceramic Process" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+    
+                <!--<section class="gallery">
+    			<div id="gallery-grid"></div>
+			</section> -->
+
+    <section class="cards">
+        <div class="card">
+            <h3>Wheel-Thrown</h3>
+            <p>Each piece is shaped slowly by hand, embracing imperfection.</p>
+        </div>
+        <div class="card">
+            <h3>Natural Clay</h3>
+            <p>Organic materials inspired by earth and fire.</p>
+        </div>
+        <div class="card">
+            <h3>Small Batches</h3>
+            <p>Limited collections, crafted with care.</p>
+        </div>
+    </section>
+
+<!-- Press & Interview Section -->
+<div class="header-divider"></div>
+
+<section class="intro-text fade-in">
+    <h2>Featured Press</h2>
+    <p>
+        Artist interview and feature in CBC Arts
+    </p>
+</section>
+
+<section class="press-section fade-in">
+    <div class="press-card">
+        <div class="icon">🎨</div>
+        <h3>Artist Interview</h3>
+        <p class="subtitle">Featured in CBC Arts</p>
+        <p class="description">
+            "I forget everything in the world"
+        </p>
+        <a href="https://www.cbc.ca/arts/ottawa-miniature-gallery-oag-9.7003627" 
+           target="_blank" 
+           class="btn">
+            Read Full Interview on CBC Arts →
+        </a>
+    </div>
+</section>
+<!--
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Portfolio</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>-->
+<div class="header-divider"></div>
+
+<section class="intro-text fade-in">
+    <h2>Follow Us on Instagram</h2>
+    <p>
+        See our latest ceramic creations and behind-the-scenes moments.
+    </p>
+</section>
+
+<section class="instagram-section">
+    <!-- Embedded Instagram Feed using iframe -->
+    <div class="instagram-container">
+        <!-- REPLACE 'selkeramik' with your actual Instagram username -->
+        <iframe 
+            src="https://www.instagram.com/selkeramik/embed" 
+            width="100%" 
+            height="800" 
+            frameborder="0" 
+            scrolling="yes" 
+            allowtransparency="true">
+        </iframe>
+    </div>
+</section>
+    <footer>
+            <p>© <script>
+    document.write(new Date().getFullYear());
+</script> Selkeramik Ceramic Studio. All rights reserved.</p>
+        <br>
+        <div class="social-links">
+        <!-- Facebook URL -->
+        <a href="https://www.facebook.com/selen.kaplan.1804/" target="_blank" aria-label="Facebook">
+            <img src="/images/facebook-icon.png" alt="Facebook">
+        </a>
+        <!-- Instagram URL -->
+        <!--<a href="https://www.instagram.com/selkeramik/" target="_blank" aria-label="Instagram">
+            <img src="/images/instagram-icon.png" alt="Instagram">
+        </a>-->
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+<!-- CART ICON -->
+<div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<!-- CART MODAL -->
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+        <span class="close-cart" onclick="toggleCart()">×</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            Total: $<span id="cart-total">0</span>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

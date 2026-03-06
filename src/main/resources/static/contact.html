@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact – Selkeramik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html"><div class="logo">SELKERAMIK</div></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="header-divider"></div>
+
+<section class="intro-text fade-in">
+    <h1>Get in Touch</h1>
+    <p>Have a question about workshops or interested in a custom piece? I'd love to hear from you.</p>
+</section>
+
+<section class="contact-container" style="gap: 20px;">
+    <div class="contact-info">
+        <h2>Contact</h2>
+        <div class="contact-item">
+            <h3>Email</h3>
+            <p><a href="mailto:selkeramik@gmail.com">selkeramik@gmail.com</a></p>
+        </div>
+    </div>
+
+  <!-- <div class="contact-form-wrapper">
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div> -->
+    
+    <div class="contact-image">
+        <img src="/images/hand_contact_photo.jpg" alt="Ceramic work" style="width: 300px; height: auto;">
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Selkeramik Ceramic Studio. All rights reserved.</p>
+    <br>
+    <div class="social-links">
+        <a href="https://www.facebook.com/selen.kaplan.1804/" target="_blank" aria-label="Facebook">
+            <img src="/images/facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/selkeramik/" target="_blank" aria-label="Instagram">
+            <img src="/images/instagram-icon.png" alt="Instagram">
+        </a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message! I will get back to you soon.');
+    this.reset();
+});
+</script>
+
+</body>
+</html>

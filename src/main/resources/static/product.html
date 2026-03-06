@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product – Selkeramik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <a href="index.html"><div class="logo">SELKERAMIK</div></a>
+    <nav>
+    	<a href="gallery.html">Gallery</a>
+        <a href="shop.html">Shop</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="header-divider"></div>
+
+<!-- PRODUCT DETAIL -->
+<section class="product-detail fade-in">
+
+    <div class="product-image">
+        <img id="product-image" src="" alt="">
+    </div>
+
+    <div class="product-info">
+        <h1 id="product-name"></h1>
+        <p class="price" id="product-price"></p>
+
+        <!-- QUANTITY 
+        <div class="quantity">
+            <button onclick="changeProductQty(-1)">−</button>
+            <span id="qty">1</span>
+            <button onclick="changeProductQty(1)">+</button>
+        </div> -->
+
+        <!-- ADD TO CART
+        <button class="add-to-cart" onclick="addProductToCart()">
+            Add to cart
+        </button>-->
+
+        <p class="description">
+            Each piece is handmade in small batches.
+            Variations in form, glaze, and texture are intentional.
+        </p>
+    </div>
+
+</section>
+
+<!-- CART ICON -->
+<div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<!-- CART MODAL -->
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+
+        <span class="close-cart" onclick="toggleCart()">×</span>
+        <h2>Your Cart</h2>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-total">
+            Total: $<span id="cart-total">0</span>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 Selkeramik Ceramic Studio
+</footer>
+
+<script src="https://js.stripe.com/v3/"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
