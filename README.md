@@ -1,4 +1,4 @@
-# DemoAmazonq - Enterprise Spring Boot Application
+# ProjectSelkeramik - Enterprise Spring Boot Application
 
 A professionally refactored e-commerce application with Stripe payment integration, following enterprise-level architecture and best practices.
 
