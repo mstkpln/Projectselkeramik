@@ -160,4 +160,4 @@ MIT License
 
 ## 👨‍💻 Author
 
-Refactored by Amazon Q following senior Java architect best practices
+Leveraged AI-assisted engineering tools (Amazon Q) to evaluate architectural patterns and refactor legacy code structures into a highly optimized, multi-tier Maven architecture.
